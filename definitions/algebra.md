@@ -142,9 +142,9 @@ $$\forall(x,y \in A :: x \otimes y = y \otimes x)$$
 ***
 
 ```
-pred Symmetric(X: set univ, op: univ->univ->univ) {
-  BinaryOperator[X,op]
-  all x,y: X | op[x,y] = op[y,x]
+pred Symmetric(A: set univ, op: univ->univ->univ) {
+  Magma[A,op]
+  all x,y: A | op[x,y] = op[y,x]
 }
 ```
 
