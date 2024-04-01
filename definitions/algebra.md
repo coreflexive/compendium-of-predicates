@@ -55,7 +55,7 @@ $$\forall(x \in A :: I \otimes x = x )$$
 
 ```
 pred LeftUnit(A: set univ, op: univ->univ->univ, I: univ) {
-  Magma[X,op]
+  Magma[A,op]
   I in A
   all x: A | op[I,x] = x
 }
