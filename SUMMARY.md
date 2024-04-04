@@ -14,6 +14,7 @@
 * [Closed](definitions/closed.md)
 * [Extremal Elements](definitions/extremal-elements.md)
 * [Galois Connection](definitions/galois-connection.md)
+* [Indexed Union and Intersection](definitions/indexed-union-and-intersection.md)
 * [Monoidal Preorder](definitions/monoidal-preorder.md)
 * [Monotone Map](definitions/monotone-map.md)
 * [Natural Projection](definitions/natural-projection.md)
