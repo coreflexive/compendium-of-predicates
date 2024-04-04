@@ -27,6 +27,7 @@
 * [Set Inclusion](definitions/set-inclusion.md)
 * [Symmetric Monoidal Preorder](definitions/symmetric-monoidal-preorder.md)
 * [Upper Set](definitions/upper-set.md)
+* [Row Constant Relations](definitions/row-constant-relations.md)
 
 ## 🔬 Checks
 
