@@ -23,11 +23,11 @@
 * [Preservation of Extrema](definitions/preservation-of-extrema.md)
 * [Product](definitions/product.md)
 * [Relation Inclusion](definitions/relation-inclusion.md)
+* [Row Constant Relations](definitions/row-constant-relations.md)
 * [Semilattice](definitions/semilattice.md)
 * [Set Inclusion](definitions/set-inclusion.md)
 * [Symmetric Monoidal Preorder](definitions/symmetric-monoidal-preorder.md)
 * [Upper Set](definitions/upper-set.md)
-* [Row Constant Relations](definitions/row-constant-relations.md)
 
 ## 🔬 Checks
 
