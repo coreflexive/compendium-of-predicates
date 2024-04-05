@@ -127,7 +127,7 @@ pred SupDI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
 
 ```
 fun SqrI(X,Y: set univ, R: univ->univ, A: univ) : set univ {
-  { y: B | SqrI[X,Y,R,A,y] }
+  { y: Y | SqrI[X,Y,R,A,y] }
 }
 
 pred SqrI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
