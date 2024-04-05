@@ -34,7 +34,7 @@ pred Meet(A: set univ, R: univ->univ, S: set univ, x: univ) {
 
 </details>
 
-The first section in that container tells us the names of a predicate and its parameters.  This one is called $$\textbf{Meet}$$, which has four parameters $$A$$, $$R$$, $$S$$ and $$x$$. The next section tells us the conditions that the parameters must meet for the predicate to be evaluated as true.  There is a traditional math notation for this predicate:
+The first section in that container tells us the names of a predicate and its parameters.  This one is called $$\textbf{Meet}$$, which has four parameters $$A$$, $$R$$, $$S$$ and $$x$$. The next section tells us the conditions that the parameters must satisfyfor the predicate to be evaluated as true.  There is a traditional math notation for this predicate:
 
 $$
 x = \sqcap \; S
