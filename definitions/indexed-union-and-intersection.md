@@ -1,4 +1,14 @@
+---
+description: Families of relations and sets
+---
+
 # Indexed Union and Intersection
+
+### Warning
+
+Please pay attention to the **type of the** $$F$$ **parameter** in each definition. &#x20;
+
+The math notation (as is typical) hides the typing and leaves it for the reader to determine on their own.  As such, it can be challenging to know whether you are indexing a family of sets or relations.  Hopefully, this page will help clear that up.
 
 ### Indexed Union
 
@@ -13,6 +23,14 @@
 $$I, A, B \in \textbf{Set}$$
 
 $$F \in (A \to B)^I$$
+
+***
+
+**Notation.**
+
+1. $$\textbf{Cup} \; I \; A \; B \; F$$ can be written as $$\textbf{Cup} \; I \; F$$ when $$A$$ and $$B$$ are clear from the context.
+2. $$\textbf{Cup} \; I \; F$$ is written with symbols as $$\bigcup_{i \in I} F_i$$
+3. $$\bigcup_{i \in I} F_i$$ can be written as $$\bigcup( i : i \in I: F.i)$$
 
 ***
 
@@ -35,6 +53,14 @@ fun Cup(I,A,B: set univ, F: I->A->B) : A->B {
 $$I, A \in \textbf{Set}$$
 
 $$F \in I \to A$$
+
+***
+
+**Notation.**
+
+1. $$\textbf{Cup} \; I \; A \; F$$ can be written as $$\textbf{Cup} \; I \; F$$ when $$A$$ is clear from the context.
+2. $$\textbf{Cup} \; I \; F$$ is written with symbols as $$\bigcup_{i \in I} F_i$$
+3. $$\bigcup_{i \in I} F_i$$ can be written as $$\bigcup( i : i \in I: F.i)$$
 
 ***
 
@@ -62,6 +88,14 @@ $$F \in (A \to B)^I$$
 
 ***
 
+**Notation.**
+
+1. $$\textbf{Cap} \; I \; A \; B \; F$$ can be written as $$\textbf{Cap} \; I \; F$$ when $$A$$ and $$B$$ are clear from the context.
+2. $$\textbf{Cap} \; I \; F$$ is written with symbols as $$\bigcap_{i \in I} F_i$$
+3. $$\bigcap_{i \in I} F_i$$ can be written as $$\bigcap( i : i \in I: F.i)$$
+
+***
+
 ```
 fun Cap(I,A,B: set univ, F: I->A->B) : A->B {
   {x: A, y: B | all i: I | x->y in i.F }
@@ -81,6 +115,14 @@ fun Cap(I,A,B: set univ, F: I->A->B) : A->B {
 $$I, A \in \textbf{Set}$$
 
 $$F \in I \to A$$
+
+***
+
+**Notation.**
+
+1. $$\textbf{Cap} \; I \; A \; F$$ can be written as $$\textbf{Cap} \; I \; F$$ when $$A$$ is clear from the context.
+2. $$\textbf{Cap} \; I \; F$$ is written with symbols as $$\bigcap_{i \in I} F_i$$
+3. $$\bigcap_{i \in I} F_i$$ can be written as $$\bigcap( i : i \in I: F.i)$$
 
 ***
 
