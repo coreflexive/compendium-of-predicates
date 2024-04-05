@@ -15,6 +15,7 @@
 * [Complement](definitions/complement.md)
 * [Extremal Elements](definitions/extremal-elements.md)
 * [Galois Connection](definitions/galois-connection.md)
+* [Images of a set under a relation](definitions/images-of-a-set-under-a-relation.md)
 * [Indexed Union and Intersection](definitions/indexed-union-and-intersection.md)
 * [Monoidal Preorder](definitions/monoidal-preorder.md)
 * [Monotone Map](definitions/monotone-map.md)
