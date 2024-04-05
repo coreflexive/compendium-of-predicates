@@ -12,6 +12,7 @@
 * [Order Taxonomy](definitions/order-taxonomy.md)
 * [Algebra](definitions/algebra.md)
 * [Closed](definitions/closed.md)
+* [Complement](definitions/complement.md)
 * [Extremal Elements](definitions/extremal-elements.md)
 * [Galois Connection](definitions/galois-connection.md)
 * [Indexed Union and Intersection](definitions/indexed-union-and-intersection.md)
