@@ -21,6 +21,7 @@
 * [Monotone Map](definitions/monotone-map.md)
 * [Natural Projection](definitions/natural-projection.md)
 * [Non-Preservation of Extrema](definitions/non-preservation-of-extrema.md)
+* [Over and Under](definitions/over-and-under.md)
 * [Power Set](definitions/power-set.md)
 * [Preorder](definitions/preorder.md)
 * [Preservation of Extrema](definitions/preservation-of-extrema.md)
@@ -39,3 +40,4 @@
 * [Below](checks/below.md)
 * [Extremal Elements](checks/extremal-elements.md)
 * [Galois Connection](checks/galois-connection.md)
+* [Relation Division](checks/relation-division.md)
