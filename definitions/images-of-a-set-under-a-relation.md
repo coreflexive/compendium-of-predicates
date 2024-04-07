@@ -18,7 +18,7 @@ $$\textbf{Includes} \; A \; X$$
 
 </details>
 
-### Images according to De Baets and Kerr
+### Images according to De Baets and Kerre
 
 #### Typing
 
@@ -65,9 +65,8 @@ Furthermore, I have chosen to extract the range of each set comprehension to its
 
 ***
 
-```
-fun SubDI(X,Y: set univ, R: univ->univ, A: univ) : set univ {
-  { y: Y | SubDI[X,Y,R,A,y] }
+<pre><code><strong>fun SubDI(X,Y: set univ, R: univ->univ, A: set univ) : set univ {
+</strong>  { y: Y | SubDI[X,Y,R,A,y] }
 }
 
 pred SubDI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
@@ -76,7 +75,7 @@ pred SubDI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
   some A
   A in R.y
 }
-```
+</code></pre>
 
 </details>
 
@@ -96,7 +95,7 @@ pred SubDI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
 ***
 
 ```
-fun SupDI(X,Y: set univ, R: univ->univ, A: univ) : set univ {
+fun SupDI(X,Y: set univ, R: univ->univ, A: set univ) : set univ {
   { y: Y | SupDI[X,Y,R,A,y] }
 }
 
@@ -126,7 +125,7 @@ pred SupDI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
 ***
 
 ```
-fun SqrI(X,Y: set univ, R: univ->univ, A: univ) : set univ {
+fun SqrI(X,Y: set univ, R: univ->univ, A: set univ) : set univ {
   { y: Y | SqrI[X,Y,R,A,y] }
 }
 
@@ -135,6 +134,77 @@ pred SqrI(X,Y: set univ, R: univ->univ, A: set univ, y: univ) {
 
   some A
   A = R.y
+}
+```
+
+</details>
+
+### Images according to Bandler and Kohout
+
+#### Sub-direct Image
+
+<details>
+
+<summary><span class="math">\textbf{SubDI} \; X \; Y \; R \; A := \{\; y \in Y : A \subseteq Ry \; \}</span></summary>
+
+***
+
+**Notation.**
+
+1. $$\textbf{SubDI} \; X \; Y \; R \; A$$ can be written $$\textbf{SubDI} \; R \; A$$ when $$X$$ and $$Y$$ are clear from the context.
+2. $$\textbf{SubDI} \; R \; A$$ is written in symbols as $$R^{\vartriangleleft}(A)$$
+
+***
+
+```
+fun SubDI(X,Y: set univ, R: X->Y, A: set X) : set univ {
+  { y: Y | A in R.y }
+}
+```
+
+</details>
+
+#### Super-direct Image
+
+<details>
+
+<summary><span class="math">\textbf{SupDI} \; X \; Y \; R \; A  =  \{\; y \in Y :  A \supseteq Ry  \; \}</span></summary>
+
+***
+
+**Notation.**
+
+1. $$\textbf{SupDI} \; X \; Y \; R \; A$$ can be written $$\textbf{SupDI} \; R \; A$$ when $$X$$ and $$Y$$ are clear from the context.
+2. $$\textbf{SupDI} \; R \; A$$ is written in symbols as $$R^{\vartriangleright}(A)$$
+
+***
+
+```
+fun SupDI(X,Y: set univ, R: X->Y, A: set X) : set univ {
+  { y: Y | R.y in A }
+}
+```
+
+</details>
+
+#### Square Image
+
+<details>
+
+<summary><span class="math">\textbf{SqrI} \; X \; Y \; R \; A  =  \{\; y \in Y :  A = Ry  \; \}</span></summary>
+
+***
+
+**Notation.**
+
+1. $$\textbf{SqrI} \; X \; Y \; R \; A$$ can be written $$\textbf{SqrI} \; R \; A$$ when $$X$$ and $$Y$$ are clear from the context.
+2. $$\textbf{SqrI} \; R \; A$$ is written in symbols as $$R^{\diamond}(A)$$
+
+***
+
+```
+fun SqrI(X,Y: set univ, R: X->Y, A: set X) : set univ {
+  { y: Y | A = R.y }
 }
 ```
 
