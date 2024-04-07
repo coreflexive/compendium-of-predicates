@@ -6,9 +6,13 @@
 
 ***
 
-$$\textbf{MonotoneMap} \; A \; B \; R \; S \; f$$
+$$\textbf{Preorder} \; A \; R$$
 
-$$\textbf{MonotoneMap} \; B \; A \; S \; R \; g$$
+$$\textbf{Preorder} \; B \; S$$
+
+$$\textbf{Function} \; A \; B \; f$$
+
+$$\textbf{Function} \; B \; A \; g$$
 
 $$\forall(a,b :: R.(f.p).q) \equiv S.p.(g.q))$$
 
@@ -16,8 +20,6 @@ $$\forall(a,b :: R.(f.p).q) \equiv S.p.(g.q))$$
 
 ```
 pred GaloisConnection(A,B: set univ, R,S,f,g: univ->univ) {
-  --MonotoneMap[A,B,R,S,f]
-  --MonotoneMap[B,A,S,R,g]
   Preorder[A,R]
   Preorder[B,S]
   Function[A,B,f]
