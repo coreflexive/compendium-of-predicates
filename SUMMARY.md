@@ -11,6 +11,7 @@
 * [Relation Taxonomy](definitions/relation-taxonomy.md)
 * [Order Taxonomy](definitions/order-taxonomy.md)
 * [Algebra](definitions/algebra.md)
+* [Bandler-Kohout Products of Relations](definitions/bandler-kohout-products-of-relations.md)
 * [Closed](definitions/closed.md)
 * [Complement](definitions/complement.md)
 * [Extremal Elements](definitions/extremal-elements.md)
