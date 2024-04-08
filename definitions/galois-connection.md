@@ -14,7 +14,7 @@ $$\textbf{Function} \; A \; B \; f$$
 
 $$\textbf{Function} \; B \; A \; g$$
 
-$$\forall(a,b :: R.(f.p).q) \equiv S.p.(g.q))$$
+$$\forall(a,b :: (f.a)\mathrel{R} b \equiv a \mathrel{S} (g.b))$$
 
 ***
 

@@ -1,3 +1,7 @@
+---
+description: Here's where quantifiers obstruct beauty
+---
+
 # Galois Connection
 
 ### Duality
@@ -26,7 +30,7 @@ check {
 
 <details>
 
-<summary><span class="math">\forall(a : : R.a.(g(f.a))</span></summary>
+<summary><span class="math">\forall(a : : a \mathrel{R} (g(f(a)))</span></summary>
 
 ***
 
@@ -51,7 +55,7 @@ check {
 
 <details>
 
-<summary><span class="math">\forall(b :: S.(f(g.b).b )</span></summary>
+<summary><span class="math">\forall(b :: (f(g(b)))\mathrel{S} b)</span></summary>
 
 ***
 
