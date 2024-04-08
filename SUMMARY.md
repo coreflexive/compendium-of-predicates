@@ -41,5 +41,4 @@
 * [Indirect Equality and Inclusion](checks/indirect-equality-and-inclusion.md)
 * [Below](checks/below.md)
 * [Extremal Elements](checks/extremal-elements.md)
-* [Galois Connection](checks/galois-connection.md)
 * [Relation Division](checks/relation-division.md)
