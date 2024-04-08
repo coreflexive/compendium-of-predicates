@@ -14,7 +14,7 @@ $$\textbf{Function} \; A \; B \; f$$
 
 $$\textbf{Function} \; B \; A \; g$$
 
-$$\forall(a,b :: (f.a)\mathrel{R} b \equiv a \mathrel{S} (g.b))$$
+$$f  ; S = R \; ; ~g^{\circ}$$
 
 ***
 
@@ -24,7 +24,7 @@ pred GaloisConnection(A,B: set univ, R,S,f,g: univ->univ) {
   Preorder[B,S]
   Function[A,B,f]
   Function[B,A,g]
-  all a: A, b: B | f[a]->b in S iff a->g[b] in R
+  f.S = R.~g
 }
 ```
 
