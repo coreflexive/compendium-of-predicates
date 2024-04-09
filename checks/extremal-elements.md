@@ -467,14 +467,6 @@ check {
 
 </details>
 
-<details>
-
-<summary></summary>
-
-
-
-</details>
-
 ### Join
 
 <details>
