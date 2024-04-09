@@ -142,7 +142,7 @@ $$\textbf{Preorder} \; A \; R$$
 
 <details>
 
-<summary><span class="math">\textbf{Product} \; A \; B \; R \; S := \{ \; p,q \in A \times B : R.(\textbf{fst}.p).(\textbf{fst}.q) : S.(\textbf{snd}.p).(\textbf{snd}.q) : \textbf{pair} \; p \; q \; \}</span></summary>
+<summary><span class="math">\textbf{Product} \; A \; B \; R \; S := \{ \; p,q \in A \times B : R.(\textbf{fst}.p).(\textbf{fst}.q) \wedge S.(\textbf{snd}.p).(\textbf{snd}.q) : \textbf{pair} \; p \; q \; \}</span></summary>
 
 ***
 
