@@ -1,3 +1,7 @@
+---
+description: Closed sets are elegantly described using coreflexives and inclusion
+---
+
 # Closed
 
 <details>
@@ -10,7 +14,7 @@ $$\textbf{EndoRelation} \; A \; R$$
 
 $$\textbf{PowerSet} \; A \; X$$
 
-$$\forall( x,y \in A : x \in X \wedge R.x.y : y \in X )$$
+$$\Phi_X ; R \subseteq R ; \Phi_X$$
 
 ***
 
@@ -18,7 +22,7 @@ $$\forall( x,y \in A : x \in X \wedge R.x.y : y \in X )$$
 pred Closed(A: set univ, R: univ->univ, X: set univ) {
   EndoRelation[A,R]
   X in A
-  all x,y: A | x in X and x->y in R implies y in X
+  X<:R in R:>X
 }
 ```
 
