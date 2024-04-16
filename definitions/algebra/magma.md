@@ -163,7 +163,7 @@ $$f(x,R) = I$$
 ***
 
 ```
-pred RightInverse(s: set univ, f: univ->univ->univ, I,R,x: univ) {
+pred RightInverse(A: set univ, f: univ->univ->univ, I,R,x: univ) {
   Unital[A,f,I]
   f[x,R] = I
 }

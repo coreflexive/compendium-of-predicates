@@ -20,6 +20,7 @@
   * [Ring](definitions/algebra/ring.md)
   * [Unit Ring](definitions/algebra/unit-ring.md)
   * [Boolean Ring](definitions/algebra/boolean-ring.md)
+  * [Boolean Group](definitions/algebra/boolean-group.md)
 * [Bandler and Kohout Products of Relations](definitions/bandler-and-kohout-products-of-relations.md)
 * [Closed](definitions/closed.md)
 * [Complement](definitions/complement.md)
@@ -53,3 +54,4 @@
 * [Relation Division](checks/relation-division.md)
 * [Algebra](checks/algebra/README.md)
   * [Ring](checks/algebra/ring.md)
+  * [Boolean Group](checks/algebra/boolean-group.md)
