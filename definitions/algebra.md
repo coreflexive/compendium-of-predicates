@@ -20,6 +20,25 @@ pred Magma(A: set univ, op: univ->univ->univ) {
 
 <details>
 
+<summary><span class="math">\textbf{Group} \; A \; \otimes \; E</span></summary>
+
+***
+
+$$\textbf{Monoid} \; A \; \otimes \; E$$
+
+***
+
+```
+pred Group(A: set univ, f: univ->univ->univ, E: univ) {
+  Monoid[A,f,E]
+  all x: A | some y: A | Inverse[A,f,E,y,x]
+}
+```
+
+</details>
+
+<details>
+
 <summary><span class="math">\textbf{Idempotent} \; A \; \otimes</span></summary>
 
 ***
@@ -34,6 +53,48 @@ $$\forall(a \in A :: a \otimes a = a)$$
 pred Idempotent(A: set univ, op: univ->univ->univ) {
   Magma[A,op]
   all a: A | op[a,a] = a
+}
+```
+
+</details>
+
+<details>
+
+<summary><span class="math">\textbf{Inverse} \; A \; f \; I \; y \; x</span></summary>
+
+***
+
+$$\textbf{LeftInverse} \; A \; f \; I \; y \; x$$
+
+$$\textbf{RightInverse} \; A \; f \; I \; y \; x$$
+
+***
+
+```
+pred Inverse(A: set univ, f: univ->univ->univ, I,y,x: univ) {
+  LeftInverse[A,f,I,y,x]
+  RightInverse[A,f,I,y,x]
+}
+```
+
+</details>
+
+<details>
+
+<summary><span class="math">\textbf{LeftInverse} \; A \; f \; I \; y \; x</span></summary>
+
+***
+
+$$\textbf{Unital} \; A \; f \; I$$
+
+$$f(L,x) = I$$
+
+***
+
+```
+pred LeftInverse(A: set univ, f: univ->univ->univ, I,L,x: univ) {
+  Unital[A,f,I]
+  f[L,x] = I
 }
 ```
 
@@ -79,6 +140,27 @@ $$\textbf{Unital} \; A \; \otimes \; I$$
 pred Monoid(A: set univ, op: univ->univ->univ, I: univ) {
   Semigroup[A,op]
   Unital[A,op,I]
+}
+```
+
+</details>
+
+<details>
+
+<summary><span class="math">\textbf{RightInverse} \; A \; f \; I \; y \; x</span></summary>
+
+***
+
+$$\textbf{Unital} \; A \; f \; I$$
+
+$$f(x,R) = I$$
+
+***
+
+```
+pred RightInverse(s: set univ, f: univ->univ->univ, I,R,x: univ) {
+  Unital[A,f,I]
+  f[x,R] = I
 }
 ```
 
