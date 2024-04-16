@@ -1,4 +1,4 @@
-# Algebra
+# Magma
 
 <details>
 
@@ -13,25 +13,6 @@ $$\textbf{Function} \; (A \times A) \; A \; \otimes$$
 ```
 pred Magma(A: set univ, op: univ->univ->univ) {
   op in (A->A)-> one A
-}
-```
-
-</details>
-
-<details>
-
-<summary><span class="math">\textbf{Group} \; A \; \otimes \; E</span></summary>
-
-***
-
-$$\textbf{Monoid} \; A \; \otimes \; E$$
-
-***
-
-```
-pred Group(A: set univ, f: univ->univ->univ, E: univ) {
-  Monoid[A,f,E]
-  all x: A | some y: A | Inverse[A,f,E,y,x]
 }
 ```
 
@@ -126,27 +107,6 @@ pred LeftUnit(A: set univ, op: univ->univ->univ, I: univ) {
 
 <details>
 
-<summary><span class="math">\textbf{Monoid} \; A \; \otimes \; I</span></summary>
-
-***
-
-$$\textbf{Semigroup} \; A \; \otimes$$
-
-$$\textbf{Unital} \; A \; \otimes \; I$$
-
-***
-
-```
-pred Monoid(A: set univ, op: univ->univ->univ, I: univ) {
-  Semigroup[A,op]
-  Unital[A,op,I]
-}
-```
-
-</details>
-
-<details>
-
 <summary><span class="math">\textbf{RightInverse} \; A \; f \; I \; y \; x</span></summary>
 
 ***
@@ -185,27 +145,6 @@ pred RightUnit(A: set univ, op: univ->univ->univ, I: univ) {
   Magma[A,op]
   I in A
   all x: A | x = op[x,I]
-}
-```
-
-</details>
-
-<details>
-
-<summary><span class="math">\textbf{Semigroup} \; A \; \otimes</span></summary>
-
-***
-
-$$\textbf{Magma} \; A \; \otimes$$
-
-$$\forall(x,y,z \in X : (x \otimes y) \otimes z = x \otimes (y \otimes z))$$
-
-***
-
-```
-pred Semigroup(A: set univ, op: univ->univ->univ) {
-  Magma[A,op]
-  all x,y,z: A | op[op[x,y],z] = op[x,op[y,z]]
 }
 ```
 
