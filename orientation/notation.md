@@ -36,7 +36,7 @@ $$
 x = \sqcap \; S
 $$
 
-, which is read: $$x$$ is the meet of the set $$S$$ with respect to the preorder $$R$$ on the set $$A$$. That being such a mouthful is the motivation for not mentioning $$A$$ and $$R$$ in the notation. This definition has a **Notation** section where I explain how the translation works. Finally, I show how to translate the predicate into Alloy syntax
+which is read: $$x$$ is the meet of the set $$S$$ with respect to the preorder $$R$$ on the set $$A$$. That being such a mouthful is the motivation for not mentioning $$A$$ and $$R$$ in the notation. This definition has a **Notation** section where I explain how the translation works. Finally, I show how to translate the predicate into Alloy syntax
 
 > This way of presenting definitions was inspired by Ralph Back's _Structured Derivations_. I highly recommend you check out his books: "Teaching Mathematics in the Digital Age" and "Refinement Calculus: A Systematic Introduction".
 
