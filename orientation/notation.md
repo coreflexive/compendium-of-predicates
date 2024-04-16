@@ -1,7 +1,3 @@
----
-description: Where I explain why I write the way I do
----
-
 # ✒️ Notation
 
 Mathematical notation is elegant, but only because context and conventions allow us to hide references to dependencies. When writing Alloy, we do not have such a luxury. These pages are concerned with presenting definitions of mathematical objects in a manner which is easy to translate into Alloy syntax. So, don't expect traditional mathematical notation to be the first thing you see when you navigate these pages. Instead, you'll see familiar names followed by parameter lists that are perhaps longer than you are used to. For example, within the pages describing **Extremal Elements**, you'll see expandable content like this:

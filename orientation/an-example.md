@@ -1,7 +1,3 @@
----
-description: Some definitions have many dependencies
----
-
 # 😅 An Example
 
 I wanted to see what a generative effect looked like.  After much searching, copying, and pasting, I created this Alloy specification:

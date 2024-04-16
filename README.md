@@ -1,7 +1,3 @@
----
-description: I assume that you are familiar with Alloy...
----
-
 # ⭐ Welcome
 
 Welcome to my compendium of predicates!
