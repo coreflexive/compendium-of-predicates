@@ -2,13 +2,13 @@
 
 <details>
 
-<summary><span class="math">\textbf{Ringoid} \; A \; \text{tms} \; \text{pls}</span></summary>
+<summary><span class="math">\textbf{Ringoid} \; A \; \otimes \; \oplus</span></summary>
 
 ***
 
-$$\textbf{Distl} \; A \; \text{tms} \; \text{pls}$$
+$$\textbf{Distl} \; A \; \otimes \; \oplus$$
 
-$$\textbf{Distr} \; A \; \text{tms} \; \text{pls}$$
+$$\textbf{Distr} \; A \; \otimes \; \oplus$$
 
 ***
 

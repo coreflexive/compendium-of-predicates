@@ -12,6 +12,7 @@
 * [Order Taxonomy](definitions/order-taxonomy.md)
 * [Algebra](definitions/algebra.md)
 * [Ringoid](definitions/ringoid.md)
+* [Semiring](definitions/semiring.md)
 * [Bandler and Kohout Products of Relations](definitions/bandler-and-kohout-products-of-relations.md)
 * [Closed](definitions/closed.md)
 * [Complement](definitions/complement.md)
