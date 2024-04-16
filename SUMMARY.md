@@ -54,4 +54,5 @@
 * [Relation Division](checks/relation-division.md)
 * [Algebra](checks/algebra/README.md)
   * [Ring](checks/algebra/ring.md)
+  * [Boolean Ring](checks/algebra/boolean-ring.md)
   * [Boolean Group](checks/algebra/boolean-group.md)
