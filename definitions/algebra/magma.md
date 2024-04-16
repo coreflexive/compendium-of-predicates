@@ -128,6 +128,30 @@ pred LeftUnit(A: set univ, op: univ->univ->univ, I: univ) {
 
 <details>
 
+<summary><span class="math">\textbf{LeftZero} \; A \; f \; Z</span></summary>
+
+***
+
+$$\textbf{Magma} \; A \; \otimes$$
+
+$$I \in A$$
+
+$$\forall(x \in A :: f(Z,x) = Z)$$
+
+***
+
+```
+pred LeftZero(A: set univ, f: univ->univ->univ, Z: univ) {
+  Magma[A,f]
+  Z in A
+  all x: A | f[Z,x] = Z
+}
+```
+
+</details>
+
+<details>
+
 <summary><span class="math">\textbf{RightInverse} \; A \; f \; I \; y \; x</span></summary>
 
 ***
@@ -173,6 +197,30 @@ pred RightUnit(A: set univ, op: univ->univ->univ, I: univ) {
 
 <details>
 
+<summary><span class="math">\textbf{RightZero} \; A \; f \; Z</span></summary>
+
+***
+
+$$\textbf{Magma} \; A \; \otimes$$
+
+$$I \in A$$
+
+$$\forall(x \in A :: f(x,Z) = Z)$$
+
+***
+
+```
+pred RightZero(A: set univ, f: univ->univ->univ, Z: univ) {
+  Magma[A,f]
+  Z in A
+  all x: A | f[x,Z] = Z
+}
+```
+
+</details>
+
+<details>
+
 <summary><span class="math">\textbf{Symmetric} \; A \; \otimes</span></summary>
 
 ***
@@ -208,6 +256,27 @@ $$\textbf{RightUnit} \; A \; \otimes \; I$$
 pred Unital(A: set univ, op: univ->univ->univ, I: univ) {
   LeftUnit[A,op,I]
   RightUnit[A,op,I]
+}
+```
+
+</details>
+
+<details>
+
+<summary><span class="math">\textbf{Zero} \; A \; f \; Z</span></summary>
+
+***
+
+$$\textbf{LeftZero} \; A \; f \; Z$$
+
+$$\textbf{RightZero} \; A \; f \; Z$$
+
+***
+
+```
+pred Zero(A: set univ, f: univ->univ->univ, Z: univ) {
+  LeftZero[A,f,Z]
+  RightZero[A,f,Z]
 }
 ```
 
