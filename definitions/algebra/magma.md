@@ -20,6 +20,27 @@ pred Magma(A: set univ, op: univ->univ->univ) {
 
 <details>
 
+<summary><span class="math">\textbf{AutoInverse} \; A \; f \; I</span></summary>
+
+***
+
+$$\textbf{Unital} \; A \; f\; I$$
+
+$$\forall(x \in A ::f(x,x) = I)$$
+
+***
+
+```
+pred AutoInverse(A: set univ, f: univ->univ->univ, I: univ) {
+  Unital[A,f,I]
+  all x: A | f[x,x] = I
+}
+```
+
+</details>
+
+<details>
+
 <summary><span class="math">\textbf{Idempotent} \; A \; \otimes</span></summary>
 
 ***
