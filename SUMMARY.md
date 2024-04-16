@@ -18,6 +18,7 @@
   * [Ringoid](definitions/algebra/ringoid.md)
   * [Semiring](definitions/algebra/semiring.md)
   * [Ring](definitions/algebra/ring.md)
+  * [Unit Ring](definitions/algebra/unit-ring.md)
 * [Bandler and Kohout Products of Relations](definitions/bandler-and-kohout-products-of-relations.md)
 * [Closed](definitions/closed.md)
 * [Complement](definitions/complement.md)
